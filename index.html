@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layyana Junaid</title>
+    <meta name="description" content="Layyana — AI Engineer. Portfolio, projects, and resume." />
+
+    <!-- Fonts (editorial + clean) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <!-- Resume Modal -->
+<div id="resumeModal" class="resume-modal">
+  <div class="resume-overlay"></div>
+
+  <div class="resume-box">
+    <button class="resume-close" id="closeResume">✕</button>
+
+    <iframe 
+      src="assets/Layyana_Junaid.pdf"
+      class="resume-frame"
+      title="Layyana Junaid Resume">
+    </iframe>
+  </div>
+</div>
+
+<!-- Internship Letter Modal -->
+<div id="letterModal" class="resume-modal">
+  <div class="resume-overlay"></div>
+
+  <div class="resume-box">
+    <button class="resume-close" id="closeLetter">✕</button>
+
+    <iframe
+      src="assets/internship letter.pdf"
+      class="resume-frame"
+      title="Internship Letter">
+    </iframe>
+  </div>
+</div>
+
+
+  <body>
+    <!-- Decorative blobs -->
+    <div class="blob blob-1" aria-hidden="true"></div>
+    <div class="blob blob-2" aria-hidden="true"></div>
+    <div class="blob blob-3" aria-hidden="true"></div>
+
+    <!-- Navbar -->
+    <header class="nav">
+      <a class="brand" href="#top" aria-label="Layyana Home">
+        <span class="spark" aria-hidden="true"></span>
+        <span class="brand-name">Layyana Junaid</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+      </nav>
+
+      <a class="btn btn-primary" href="#contact">Get in touch</a>
+    </header>
+
+    <!-- HERO -->
+    <main id="top" class="hero">
+      <section class="hero-grid">
+        <!-- Left: Photo/Feature card -->
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <div class="pill">AI Engineer • Data Analyst</div>
+            <div class="pill pill-soft">Code • Build • Repeat</div>
+          </div>
+
+          <div class="photo-frame">
+            <img class="hero-img" src="assets/me.png" alt="Layyana illustration" />
+            </div>
+          <p class="hero-mini">
+             Hello! I'm Layyana, an AI Engineer passionate about creating intelligent systems that blend innovation with practicality.          </p>
+
+          <div class="hero-social">
+            <a class="chip" href="https://github.com/layyana-junaid" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="chip" href="https://www.linkedin.com/in/layyana-junaid" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="chip" href="mailto:layyana.junaid@email.com">Email</a>
+          </div>
+        </div>
+
+        <!-- Right: Big typography + intro -->
+        <div class="hero-type">
+          <div class="title-stack" aria-hidden="true">
+            <div class="title-outline">PORTFOLIO</div>
+            <div class="title-outline offset-1">PORTFOLIO</div>
+            <div class="title-outline offset-2">PORTFOLIO</div>
+          </div>
+
+          <h1 class="title-main">PORTFOLIO</h1>
+
+          <div class="name-block">
+            <div class="name-main">Layyana Junaid</div>
+            <div class="name-role">AI Engineer • Data Analyst</div>
+          </div>
+
+          <p class="hero-desc">
+            Engineering full-stack AI systems, from signal to screen.
+
+            Scroll for highlights of my projects and experience.         
+        </p>
+
+          <div class="cta-row">
+            <a class="btn btn-ghost" href="#work">See projects</a>
+            <a class="btn btn-soft" href="#resume">View resume</a>
+            <a class="btn btn-primary" href="#experience">Experience</a>
+          </div>
+
+          <!-- sparkles -->
+          <div class="sparkles" aria-hidden="true">
+            <span class="star s1">✦</span>
+            <span class="star s2">✧</span>
+            <span class="star s3">✦</span>
+            <span class="star s4">✧</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scroll Button -->
+      <button class="scroll-btn" id="scrollBtn" type="button" aria-label="Scroll down">
+        <span>Scroll</span>
+        <span class="scroll-dot" aria-hidden="true"></span>
+        <span>down</span>
+      </button>
+    </main>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2 class="section-title">Hello, I’m Layyana!</h2>
+          <p class="section-subtitle">
+            I’m an AI Engineer focused on building end-to-end solutions: model → pipeline → product.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>What I do</h3>
+            <p>
+              I design and deploy <b>Agentic AI systems</b> that combine <b>machine learning</b>, <b>data</b>, and <b>intelligent workflows</b> to solve real-world business problems.
+              I love projects that mix logic and creativity.
+            </p>
+
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">LLMs</span>
+              <span class="tag">LangChain/LangGraph</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Agentic AI</span>
+              <span class="tag">Data Analysis</span>
+              <span class="tag">RAG</span>
+              <span class="tag">ReAct</span>
+            </div>
+          </div>
+
+          <div class="about-card about-card-fun">
+            <h3>Fun facts</h3>
+            <ul class="fun-list">
+              <li>I like clean UI with playful micro-details.</li>
+              <li>(UI needs to be pretty!)</li>
+              <li>I prefer building tools people actually use.</li>
+              <li>I’m obsessed with making data tell a story.</li>
+              <li>I love music and you'll see my many projects are around music.</li>
+            </ul>
+
+            <div class="badge-row">
+              <span class="badge">Music Lover</span>
+              <span class="badge">Curious</span>
+              <span class="badge">Builder</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section section-alt">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2 class="section-title">Resume</h2>
+          <p class="section-subtitle">
+            A quick overview of my education and skills, you can also view my full resume
+          </p>
+        </div>
+
+        <div class="resume-grid">
+          <div class="resume-card">
+            <h3>Education</h3>
+            <div class="timeline">
+              <div class="t-item">
+                <div class="t-year">2023-2027</div>
+                <div class="t-body">
+                  <div class="t-title">FAST NUCES - Karachi</div>
+                  <div class="t-sub">Bachelors of Science in Artificial Intelligence</div>
+                </div>
+              </div>
+              <div class="t-item">
+                <div class="t-year">2021-2023</div>
+                <div class="t-body">
+                  <div class="t-title">Beaconhouse College Program</div>
+                  <div class="t-sub">A Levels (Pre-Engineering)</div>
+                </div>
+              </div>
+              <div class="t-item">
+                <div class="t-year">2008-2021</div>
+                <div class="t-body">
+                  <div class="t-title">Beaconhouse School System</div>
+                  <div class="t-sub">O Levels (Pre-Engineering)</div>
+                </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="resume-card resume-card-accent">
+            <h3>Skills</h3>
+            <div class="skill-cols">
+              <div>
+                <h4>AI / Data</h4>
+                <div class="chips">
+                  <span class="chip">LLMs</span>
+                  <span class="chip">RAG</span>
+                  <span class="chip">Embeddings</span>
+                  <span class="chip">ReAct</span>
+                  <span class="chip">LangChain</span>
+                  <span class="chip">LangGraph</span>
+                  <span class="chip">PyTorch</span>
+                  <span class="chip">scikit-learn</span>
+                  <span class="chip">Pandas</span>
+                  <span class="chip">EDA</span>
+                </div>
+              </div>
+              <div>
+                <h4>Engineering</h4>
+                <div class="chips">
+                  <span class="chip">FastAPI</span>
+                  <span class="chip">Flask</span>
+                  <span class="chip">Git/Github</span>
+                  <span class="chip">SQL</span>
+                  <span class="chip">Docker</span>
+                  <span class="chip">Pinecone</span>
+                  <span class="chip">Azure Embeddings</span>
+                  <span class="chip">Groq</span>
+                  <span class="chip">Deepgram</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="resume-actions">
+              <button class="btn btn-primary" id="openResume">View PDF Resume</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="section-inner">
+    <div class="section-head">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-subtitle">
+        Hands-on industry experience building real AI systems using RAG, ReAct workflows, and multi-agent reasoning.
+      </p>
+    </div>
+
+    <div class="work-grid experience-grid">
+      <article class="work-card experience-card">
+
+        <div class="work-top">
+          <div class="work-title">AI Intern — Jaffer Business Systems</div>
+          <div class="work-badge">Jul–Aug 2025</div>
+        </div>
+
+        <p class="work-desc">
+          Built practical LLM-driven systems using modern agent frameworks, focusing on reliable retrieval, strong reasoning chains,
+          and multi-modal inputs for real-world content generation.
+        </p>
+        <ul class="work-bullets">
+          <li>
+            Gained hands-on experience with advanced AI frameworks such as <b>LangChain</b> and <b>LangGraph</b> to create intelligent,
+            practical systems based on <b>ReAct</b> and <b>RAG</b> methodologies.
+          </li>
+
+          <li>
+            Developed a <b>Debt Management Agent</b> using <b>RAG</b> and <b>LangGraph</b> to retrieve financial data from <b>Pinecone</b>,
+            with data embedded and upserted using <b>Azure OpenAI embeddings</b>, and applied <b>Avalanche/Snowball</b> techniques to
+            increase retrieval accuracy by <b>20%</b>.
+          </li>
+
+          <li>
+            Designed a <b>Smart Conversational Analyser</b> using <b>LangChain</b> and <b>ReAct workflows</b>, incorporating the <b>Groq API</b>
+            and <b>Deepgram STT</b> for LLM-driven quiz, flashcard, and summarisation. The system accepts three input types —
+            <b>real-time audio</b>, <b>MP3/MP4 files</b>, and <b>YouTube links</b> — and processes them seamlessly for intelligent content generation.
+          </li>
+
+          <li>
+            Improved reasoning chains in <b>RAG</b> and <b>ReAct</b> architectures, improving multi-agent cooperation and contextual response quality.
+          </li>
+        </ul>
+
+        <div class="work-tags">
+          <span>LangChain</span>
+          <span>LangGraph</span>
+          <span>RAG</span>
+          <span>ReAct</span>
+          <span>Pinecone</span>
+          <span>Azure OpenAI</span>
+          <span>Groq API</span>
+          <span>Deepgram STT</span>
+          <span>Avalanche</span>
+          <span>Snowball</span>
+        </div>
+
+        <div class="work-links">
+          <button class="btn btn-ghost" id="openLetter" type="button">
+            View Internship Letter
+          </button>
+        </div>
+
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="section">
+  <div class="section-inner">
+    <div class="section-head">
+      <h2 class="section-title">Work</h2>
+      <p class="section-subtitle">
+        Projects I’m proud of — built end-to-end with AI, systems, and clean engineering.
+      </p>
+      <p class="section-subtitle">
+        (beware too much music-themed projects ahead 🎵)
+      </p>
+    </div>
+
+    <div class="work-grid">
+
+        <!-- 5) Knowledge Graph + Fuzzy Clustering -->
+      <article class="work-card">
+        <div class="work-top">
+          <div class="work-title">Knowledge Graph Theme Discovery (Religious Text) <span class="sticker">🕊️</span></div>
+          <div class="work-badge">NLP&KG</div>
+        </div>
+        <p class="work-desc">
+          Built a data-driven knowledge graph using spaCy SVO extraction and automatic ontology induction. Modeled semantic
+          importance with centrality metrics and used <b>Fuzzy C-Means</b> to find overlapping themes.
+        </p>
+        <div class="work-tags">
+          <span>spaCy</span><span>SVO</span><span>Ontology</span><span>Centrality</span><span>Fuzzy C-Means</span>
+        </div>
+        <div class="work-links">
+          <a class="btn btn-soft" href="https://github.com/layyana-junaid/Knowledge_Graph_Based_Clustering" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </article>
+
+      <!-- 6) Hybrid Music Genre Predictor (ANN + PCA-SVM + LLM Explainability) -->
+      <article class="work-card">
+        <div class="work-top">
+          <div class="work-title">Hybrid Music Genre Predictor (Explainable AI) <span class="sticker">🎼</span></div>
+          <div class="work-badge">AI&ML</div>
+        </div>
+        <p class="work-desc">
+          Full-stack system that classifies music from YouTube audio using a <b>PyTorch ANN</b> + <b>PCA-SVM ensemble</b>
+          (<b>80.7%</b> accuracy) with Groq LLM explainability for human-readable musical reasoning, deployed via FastAPI.
+        </p>
+        <div class="work-tags">
+          <span>PyTorch</span><span>PCA-SVM</span><span>Ensemble</span><span>Groq LLM</span><span>FastAPI</span>
+        </div>
+        <div class="work-links">
+          <a class="btn btn-soft" href="https://github.com/Abser-Mansoor/ML-Project" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </article>
+
+      <!-- 1) AI Music Genre Classifier (ReAct + Deepgram + FastAPI) -->
+      <article class="work-card">
+        <div class="work-top">
+          <div class="work-title">AI Music Genre Classifier <span class="sticker">🎧</span></div>
+          <div class="work-badge">Agentic</div>
+        </div>
+        <p class="work-desc">
+          FastAPI app that extracts audio from YouTube, transcribes via Deepgram STT, then uses a Groq-powered ReAct agent
+          to forecast genres with <b>~85% accuracy</b>.
+        </p>
+        <div class="work-tags">
+          <span>FastAPI</span><span>Deepgram STT</span><span>Groq LLM</span><span>ReAct</span><span>YouTube Audio</span><span>LangChain</span>
+        </div>
+      </article>
+
+      <!-- 7) AI Music Recommendation System (LangChain + LangGraph) -->
+      <article class="work-card">
+        <div class="work-top">
+          <div class="work-title">AI Music Recommender (Context-Aware LLM Agent) <span class="sticker">✨</span></div>
+          <div class="work-badge">Agentic</div>
+        </div>
+        <p class="work-desc">
+          Built a context-aware recommender that generates coherent playlists using mood + preferences (not just genre similarity).
+          Integrated MusicBrainz metadata and orchestrated reasoning with LangChain + LangGraph for adaptive user intents.
+        </p>
+        <div class="work-tags">
+          <span>Python</span><span>MusicBrainz API</span><span>LangChain</span><span>LangGraph</span><span>FastAPI</span>
+        </div>
+        <div class="work-links">
+          <a class="btn btn-soft" href="https://github.com/taahalikescrossdressing/Playlist-Curation" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </article>
+
+
+      <!-- 2) Summara – Text Summarization Web App -->
+      <article class="work-card">
+        <div class="work-top">
+          <div class="work-title">Summara — Text Summarization Web App <span class="sticker">📝</span></div>
+          <div class="work-badge">NLP</div>
+        </div>
+        <p class="work-desc">
+          Flask web app that summarizes <b>.txt, .pdf, and .docx</b> in three modes: Insightful, Bullet Points, and Minimal.
+          Uses preprocessing + keyword extraction and custom tokenization to reduce reading time significantly.
+        </p>
+        <div class="work-tags">
+          <span>Flask</span><span>PyMuPDF</span><span>python-docx</span><span>NLP</span><span>Summarization</span>
+        </div>
+      </article>
+
+      <!-- 4) Dynamic Pac-Man -->
+      <article class="work-card">
+        <div class="work-top">
+          <div class="work-title">Dynamic Two-Player Pac-Man + AI Ghosts <span class="sticker">👾</span></div>
+          <div class="work-badge">AI</div>
+        </div>
+        <p class="work-desc">
+          Two-player Pac-Man in Python (Pygame) with adaptive ghosts using <b>A*</b>, <b>BFS</b>, <b>Min-Max</b>, and
+          <b>Genetic Algorithms</b> for dynamic gameplay.
+        </p>
+        <div class="work-tags">
+          <span>Python</span><span>Pygame</span><span>A*</span><span>Min-Max</span><span>Genetic Algorithms</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="section-inner">
+        <div class="contact-card">
+          <h2>Let’s build something pretty & powerful 💜</h2>
+          <p>
+            Want to collaborate, hire, or just say hi? Drop a message.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:layyana.junaid@email.com">Email me</a>
+            <button class="btn btn-ghost" id="copyEmailBtn" type="button">Copy email</button>
+          </div>
+          <p class="tiny" id="copyToast" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span>© <span id="year"></span> Layyana Junaid</span>
+        <span class="footer-dot" aria-hidden="true"></span>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
