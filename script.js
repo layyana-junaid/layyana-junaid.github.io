@@ -53,3 +53,27 @@ closeLetter?.addEventListener("click", () => {
   document.body.style.overflow = "";
 });
 
+// NEW: Scroll reveal animation
+(() => {
+  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const els = document.querySelectorAll(".reveal");
+
+  if (prefersReduced) {
+    els.forEach((el) => el.classList.add("show"));
+    return;
+  }
+
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          io.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -10% 0px" }
+  );
+
+  els.forEach((el) => io.observe(el));
+})();
